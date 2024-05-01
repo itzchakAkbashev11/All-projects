@@ -1,0 +1,115 @@
+.slider.container-fluid {
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 46px 23px rgba(255, 255, 255, 0.91);
+}
+
+.slider .bg_slider1 {
+    min-height: 700px;
+    background: navy;
+    background-position: center;
+    background-size: cover;
+}
+
+.slider .bg_slider {
+    min-height: 700px;
+    background: navy;
+    background-position: center;
+    background-size: cover;
+}
+
+.slider .carousel-caption {
+    background: rgba(0, 0, 0, 0.236);
+
+}
+
+.slider p {
+    font-size: 1.15em;
+}
+
+.strip {
+    min-height: 350px;
+    background-image: url(IMAGS/wildlife1.jpg);
+    background-position: center;
+    background-size: cover;
+    /* background: rgba(255, 166, 50, 0.547);  */
+
+}
+
+.strip .container-fluid {
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 46px 23px rgba(255, 255, 255, 0.91);
+}
+
+.strip h2 {
+    font-size: 3em;
+    color: white;
+}
+
+.strip .box1 iframe {
+    border: black solid 2px;
+    border-radius: 24px;
+}
+
+.strip .box2 {
+    background: rgba(255, 255, 255, 0.669);
+    border-radius: 10px;
+    min-height: 150px;
+    box-shadow: 0px 10px 22px -6px #000000;
+    filter: drop-shadow(0 0 0.4rem black);
+    filter: grayscale(70%);
+    transition: 2000ms
+}
+.strip .box2:hover{
+    filter: grayscale(0%);
+}
+
+.strip .box2 p {
+    font-size: 1.25em;
+}
+
+.box2 button {
+    background: rgb(121, 154, 115);
+    border: none;
+    color: white;
+    width: 100px;
+    border-radius: 12px;
+}
+.box2 img{
+    border-radius: 6px;
+}
+
+
+@media (max-width:768px) {
+    .web {
+        min-height: 350px;
+        background-image: url(IMAGS/lion.jpg);
+        background-position: center;
+        background-size: cover;
+        color: white;
+        box-shadow: 0px 10px 13px -7px #000000, 5px 5px 46px 23px rgba(255, 255, 255, 0.91);
+
+    }
+
+    .web h5 {
+        font-size: 2em;
+    }
+
+    .web p {
+        font-size: 1.25em;
+    }
+
+    .strip .box1 {
+        width: 100%;
+    }
+
+    .strip .box2 {
+        display: block;
+        max-width: 400px;
+        margin: 0 auto;
+        margin-top: 10px;
+        
+    }
+    .strip .box2{
+        transition: none;
+        transform: none;
+        filter: grayscale(0%);
+    }
+}

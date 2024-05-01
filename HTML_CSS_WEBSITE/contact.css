@@ -1,0 +1,24 @@
+main{
+    min-height: 750px;
+    background-image: url(IMAGS/toki.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 46px 23px rgba(255, 255, 255, 0.91);
+}
+main h1{
+    font-size: 2.55em;
+}
+button{
+    width: 70px;
+    min-height: 35px;
+    border-radius: 12px;
+}
+@media (max-width:768px) {
+    main{
+        background-image: url(IMAGS/toki.jpg);
+        background-position: center;
+        background-size: cover;
+        color: white;
+    }
+}

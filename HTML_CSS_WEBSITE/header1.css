@@ -1,0 +1,113 @@
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+}
+
+header {
+    min-height: 50px;
+    background-image: url(IMAGS/wildlife1.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 46px 23px rgba(255,255,255,0.91);
+}
+
+header.container-fluid {
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 46px 23px rgba(255, 255, 255, 0.91);
+    
+}
+
+header .row {
+    min-height: 70px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.50em;
+}
+
+header nav ul a {
+    /* color: rgb(0, 0, 0); */
+    text-decoration: none;
+    padding: 0 16px;
+    display: block;
+    transition: 1000ms;
+    color: white;
+}
+
+header nav ul a:hover {
+    color: rgb(56, 116, 96);
+    transform: scale(1.25);
+}
+
+header nav ul a::after {
+    content: "";
+    width: 0%;
+    height: 4px;
+    background: rgba(253, 255, 204, 0.903);
+    display: block;
+    transition: 1000ms;
+    margin: 0 auto;
+
+}
+
+header nav ul a:hover::after {
+    width: 100%;
+
+}
+
+@media(max-width:768px) {
+    header .row nav {
+        color: rgb(0, 0, 0);
+        display: none;
+        position: absolute;
+        width: 50%;
+        top: 70px;
+        right: 0;
+        /* background: rgba(253, 255, 204, 0.654); */
+        background: rgba(0, 0, 0, 0.443);
+        min-height: 0;
+        border-bottom-left-radius: 6px;
+        z-index: 99999;
+        padding-top: 12px;
+    }
+
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+    header .burger{
+        padding-bottom: 8px;
+    }
+
+    header .burger span {
+        font-size: 2.5em;
+        color: orange;
+        position: relative;
+    }
+
+    header nav ul li {
+        padding: 12px;
+        border-bottom: 1px solid grey;
+    }
+
+    header nav ul li:active {
+        background: olive;
+    }
+
+    header nav ul a:hover::after {
+        width: 90%;
+    }
+    header nav ul a:hover {
+        color: rgb(56, 116, 96);
+        transform: scale(1.15);
+    }
+  
+    
+
+}

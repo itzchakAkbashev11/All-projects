@@ -1,0 +1,35 @@
+main {
+    min-height: 690px;
+    background-image: url(IMAGS/SavannHome.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 46px 23px rgba(255, 255, 255, 0.91);
+
+}
+
+main .continer {
+    max-width: 1100px;
+}
+.accordion-body {
+    font-family: sans-serif;
+    font-size: 1.10em;
+    background: rgba(133, 128, 118, 0.229);
+}
+
+.accordion-button {
+    font-size: 0.75em;
+    outline: none;
+    background: rgb(255, 209, 123);
+    color: black;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    /* border-radius: 12px; */
+}
+
+.accordion-button:not(.collapsed) {
+    background: rgb(255, 255, 255);
+    /* background:  rgba(56, 116, 96, 0.536); */
+    box-shadow: none;
+}
