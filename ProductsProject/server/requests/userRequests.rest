@@ -1,0 +1,22 @@
+post http://localhost:3000/user/register
+Content-Type: application/json
+
+{
+"name":"itzchak",
+"email":"itzchak@gmail.com",
+"password":"123456"
+}
+
+### login
+post http://localhost:3000/user/login
+Content-Type: application/json
+
+{
+"email":"itzchak@gmail.com",
+"password":"123456"
+}
+
+### authUser
+POST http://localhost:3000/user/authUser
+Content-Type: application/json
+Cookie: access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwicm9sZSI6InVzZXIiLCJpYXQiOjE3MDgyNTM5OTAsImV4cCI6MTcxMDg0NTk5MH0.rfH8c2WC_gBThUvlGqx11aeydWevbCzv1epehIa38wc; Path=/; HttpOnly; Secure; SameSite=None
